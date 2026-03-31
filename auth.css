@@ -1,0 +1,360 @@
+/* ============================================
+   FreshBites - Authentication Styles
+   Login & Register Pages
+   ============================================ */
+
+.auth-page {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+    min-height: 100vh;
+}
+
+.navbar-auth {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.navbar-auth .logo {
+    color: var(--white);
+}
+
+.navbar-auth .btn-outline {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.navbar-auth .btn-outline:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+/* Auth Container */
+.auth-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - 80px);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Auth Box */
+.auth-box {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 60px var(--shadow-dark);
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.auth-form {
+    padding: 40px;
+}
+
+.auth-form.hidden {
+    display: none;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gray-dark);
+    margin-bottom: 10px;
+}
+
+.auth-header p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-dark);
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.input-group input,
+.input-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border: 2px solid var(--gray-light);
+    border-radius: var(--radius);
+    font-size: 14px;
+    transition: var(--transition);
+    outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    color: var(--gray);
+    cursor: pointer;
+    padding: 0;
+}
+
+.toggle-password:hover {
+    color: var(--gray-dark);
+}
+
+.password-hint {
+    font-size: 12px;
+    color: var(--gray);
+    margin-top: 5px;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.checkbox-label span {
+    color: var(--gray-dark);
+}
+
+.checkbox-label.terms span {
+    font-size: 13px;
+}
+
+.checkbox-label.terms a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.forgot-password {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Social Login */
+.social-login {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-login p {
+    position: relative;
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.social-login p::before,
+.social-login p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: var(--gray-light);
+}
+
+.social-login p::before {
+    left: 0;
+}
+
+.social-login p::after {
+    right: 0;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 2px solid var(--gray-light);
+    border-radius: var(--radius);
+    background-color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.social-btn:hover {
+    border-color: var(--primary);
+    background-color: var(--gray-lighter);
+}
+
+.social-btn.google {
+    color: #DB4437;
+}
+
+.social-btn.facebook {
+    color: #4267B2;
+}
+
+/* Auth Footer */
+.auth-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.auth-footer a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Auth Image Side */
+.auth-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.auth-image-content {
+    color: var(--white);
+    text-align: center;
+    max-width: 400px;
+}
+
+.auth-image-content h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.auth-image-content p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.auth-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.auth-feature i {
+    font-size: 24px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-image {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-box {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .auth-form {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+    }
+
+    .form-options {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
